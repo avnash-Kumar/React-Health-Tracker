@@ -5,7 +5,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Chart from './chart';
 
-const datas = [[1, 30, 40, 20]];
+const datas = [[10, 30, 40, 20,50,100]];
 const xlabelsData = [['M', 'T', 'W', 'T', 'F', 'S']];
 var i = 0;
 export default function App() {
@@ -44,18 +44,27 @@ export default function App() {
                 height={200}
                 data={data}
                 color='#FF2D55'
+                goal={170}
+                title='MOVE'
+                unit='Kcal'
               />
               <Chart
                 width={600}
                 height={200}
                 data={data}
                 color='#7CED05'
+                goal={130}
+                title='EXERCISE'
+                unit='min'
               />
               <Chart
                 width={600}
                 height={200}
                 data={data}
                 color='#0BCADB'
+                goal={100}
+                title='STAND'
+                unit='hr'
               />
             </Tab>
           );

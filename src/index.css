@@ -12,3 +12,11 @@
   background-color: #ff2d55!important;
   border-color: #dee2e6;
 }
+
+.grid .tick  line{
+  stroke: lightgrey;
+  opacity: 0.7;
+}
+.grid path {
+    stroke-width: 0;
+}
